@@ -7,27 +7,28 @@
     <title>Document</title>
 </head>
 <body>
+    <div>
     <h1>Create an Account</h1>
     <form name="contact">
         <div>
-                <label for="fname"><h4>First name</h4></label>
-                <input type="text" id="fname" placeholder="Enter your first name" autofocus>
-                <label for="lname"><h4>Last name</h4></label>
-                <input type="text" id="lname" placeholder="Enter your last name">
-                <label for="email"><h4>Email</h4></label>
-                <input type="email" id="email" placeholder="Enter your email">
-                <p>We'll never share your email with anyone else.</p>
+            <label for="fname"><h4>First name</h4></label>
+            <input type="text" id="fname" placeholder="Enter your first name" autofocus>
+            <label for="lname"><h4>Last name</h4></label>
+            <input type="text" id="lname" placeholder="Enter your last name">
+            <label for="email"><h4>Email</h4></label>
+            <input type="email" id="email" placeholder="Enter your email">
+            <p>We'll never share your email with anyone else.</p>
         </div>
     </form>
-        <form name="gender">
-            <div>
-                <input type="radio" id="genderChoice1"
-                name="gender" value="Male">
-                <label for="genderChoice1">Male</label>
-                <input type="radio" id="genderChoice2"
-                name="gender" value="Male">
-                <label for="genderChoice2">Female</label>
-            </div>
+    <form name="gender">
+        <div>
+            <input type="radio" id="genderChoice1"
+            name="gender" value="Male">
+            <label for="genderChoice1">Male</label>
+            <input type="radio" id="genderChoice2"
+            name="gender" value="Male">
+            <label for="genderChoice2">Female</label>
+        </div>
         </form>
     <form name="country">
         <div>
@@ -55,5 +56,46 @@
             </p>
         </div>
     </form>
+    </div>
+    <div>
+        <h1>Profile</h1>
+        <div>
+        <form name="profile">
+            <img src="/images/empty.png" alt="photo" id="photo">
+            <input type="file" id="photo">
+            <img src="/images/iconP.png" alt="icon">
+            <button type="reset">Reset</button>
+            <img src="/images/icomT.png" alt="icon">
+            <p>Up to 1 MB (300x300 px)</p>
+        </div>
+            <label for="name"><h4>Name</h4></label>
+            <input type="text" id="name" placeholder="Enter your name" autofocus>
+            <label for="email2"><h4>Email</h4></label>
+            <input type="email" id="email2" placeholder="Enter your email">
+            <label for="country"><h4>Country</h4>
+                <input type="text" placeholder="Select">
+            </label>
+            <select name="country2" id="country2">
+                <option value="-">-</option>
+                <option value="ukraine">Ukraine</option>
+                <option value="usa">USA</option>
+                <option value="poland">Poland</option>
+                <option value="united kingdom">United kingdom</option>
+                <option value="slovakia">Slovakia</option>
+            </select>
+                <label for="city"><h4>City</h4></label>
+                <input type="text" id="city" placeholder="Your city">
+                
+                <label for="zip"><h4>Zip code</h4></label>
+                <input type="text" id="zip" placeholder="your zip code">
+                <label for="phone"><h4>Phone number</h4></label>
+                <input type="text" id="phone" placeholder="your phone number">
+        <div>
+            <button type="submit">Update</button>
+        </div>
+        <div>
+        </div>
+        </form>
+    </div>
 </body>
 </html>
